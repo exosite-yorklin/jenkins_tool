@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return render_template('/var/www/ForInput.html')
+    return render_template('/var/www/jenkins_tool/templates/ForInput.html')
 
 @app.route('/ans', methods=['POST'])
 def ans():
