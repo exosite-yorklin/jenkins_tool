@@ -16,7 +16,7 @@ def ans():
     for item in data_list:
         case +='-O -t="%s" ' % item
     case = case[0:len(case)-1]
-    ans = "sudo python dqa-env/exo-robot-runner run -I dqa-semi-vert %s -i api -i solution -D hamv" % (case)
+    ans = "sudo python dqa-env/exo-robot-runner run -I dqa-semi-vert %s -i api -i solution -i web -D hamv" % (case)
 
     print(ans)
 
